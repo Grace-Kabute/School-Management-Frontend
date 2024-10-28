@@ -1,10 +1,9 @@
-import './App.css';
-import Layouts from './Layouts';
+import "./App.css";
+import Layout from "./Layouts";
 
-function App() {
+
+export default function App() {
   return (
-    <Layouts/>
+      <Layout />
   );
 }
-
-export default App;

@@ -1,18 +1,57 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Icon from '../Components/Icon';
 
 const SideNavigation = () => {
-  return (
-      <nav className="sidebar">
-        <ul>
-          <li><NavLink to="/dashboard">Dashboard</NavLink></li>
-          <li><NavLink to="/students">Students</NavLink></li>
-          <li><NavLink to="/subjects">Subjects</NavLink></li>
-          <li><NavLink to="/performance">Performance</NavLink></li>
-          <li><NavLink to="/attendance">Attendance</NavLink></li>
-        </ul>
-      </nav>
-  )
-}
 
-export default SideNavigation
+  return (
+    <nav className="sidebar">
+      <ul>
+        <li>
+          <Link 
+            to="/dashboard" >
+            <Icon name="home" />
+            Dashboard
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/students">
+            <Icon name="student" />
+            Students
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/subjects">
+            <Icon name="subject" />
+            Subjects
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/teachers">
+            <Icon name="teacher" />
+            Teachers
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/performance">
+            <Icon name="performance" />
+            Performance
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/attendance" >
+            <Icon name="attendance" />
+            Attendance
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default SideNavigation;

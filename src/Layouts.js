@@ -1,20 +1,21 @@
 import React from 'react'
 import TopNavigation from './Layouts/TopNavigation';
 import SideNavigation from './Layouts/SideNavigation';
-import MainBox from './Layouts/MainBox'
+import { Outlet } from 'react-router-dom';
+
 
 const Layouts = () => {
   return (
     <div className='layout'>
         <div className='topNavbar'>
             <TopNavigation/>
-            </div>
+        </div>
         <div className='sideNavigation'>
             <SideNavigation/>
-            </div>
+        </div>
         <div className='mainBox'>
-            <MainBox/>
-            </div>
+        <Outlet />
+        </div>
     </div>
   )
 }
