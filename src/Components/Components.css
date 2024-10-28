@@ -1,0 +1,17 @@
+.list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .list-container th,
+  .list-container td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .list-container th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
