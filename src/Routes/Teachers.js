@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import List from '../Components/List';
+import TeacherModal from '../Components/TeacherModal'
 import '../Components/Components.css'
 
-const teachers = [
-  { index: 1, name: 'Mr. Green', class: 'Math', contact: 'green@example.com' },
-  { index: 2, name: 'Ms. Brown', class: 'Science', contact: 'brown@example.com' },
-];
 
 const TeachersList = () => {
+  const [teachers, setTeachers] = useState([
+    { code: 1, name: 'Mr. Green', class: 'Math', contact: 'green@example.com' },
+    { code: 2, name: 'Ms. Brown', class: 'Science', contact: 'brown@example.com' },
+  ]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+  
+  const addTeacher = (newTeacher) => {
+    setTeachers([...teachers, newTeacher]);
+  };
   return (
     <div className='wrapper'>
-      <div class="container">
+      <div className="container">
         <h2>Teachers</h2>
-        <button>New Teacher</button>
+        <button onClick={openModal}>New Teacher</button>
       </div>
-      <List items={teachers} fields={['index', 'name', 'class', 'contact']} />
+      <List items={teachers} fields={['code', 'name', 'class', 'contact']} />
+      <TeacherModal isOpen={isModalOpen} onRequestClose={closeModal} onAddTeacher={addTeacher} />
     </div>
   );
 };

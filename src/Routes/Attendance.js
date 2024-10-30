@@ -20,7 +20,10 @@ const AttendanceList = () => {
 
   return (
     <div className='wrapper'>
-      <h2>Student Attendance List</h2>
+      <div className="container">
+        <h2>Student Attendance List</h2>
+        <button>Update</button>
+      </div>
       <List items={students} fields={fields} onAttendanceChange={handleAttendanceChange} />
     </div>
   );
