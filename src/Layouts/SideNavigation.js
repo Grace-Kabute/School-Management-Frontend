@@ -10,42 +10,48 @@ const SideNavigation = () => {
         <li>
           <Link 
             to="/dashboard" >
-            <Icon name="home" />
+            <Icon name="home"
+            className="link" />
             Dashboard
           </Link>
         </li>
         <li>
           <Link 
             to="/students">
-            <Icon name="student" />
+            <Icon name="student"
+            className="link"/>
             Students
           </Link>
         </li>
         <li>
           <Link 
             to="/subjects">
-            <Icon name="subject" />
+            <Icon name="subject"
+            className="link" />
             Subjects
           </Link>
         </li>
         <li>
           <Link 
             to="/teachers">
-            <Icon name="teacher" />
+            <Icon name="teacher"
+            className="link" />
             Teachers
           </Link>
         </li>
         <li>
           <Link 
             to="/performance">
-            <Icon name="performance" />
+            <Icon name="performance"
+            className="link" />
             Performance
           </Link>
         </li>
         <li>
           <Link 
             to="/attendance" >
-            <Icon name="attendance" />
+            <Icon name="attendance"
+            className="link" />
             Attendance
           </Link>
         </li>

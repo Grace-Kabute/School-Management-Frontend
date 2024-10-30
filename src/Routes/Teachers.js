@@ -9,9 +9,11 @@ const teachers = [
 
 const TeachersList = () => {
   return (
-    <div>
-      <h2>Teachers</h2>
-      <button>New Teacher</button>
+    <div className='wrapper'>
+      <div class="container">
+        <h2>Teachers</h2>
+        <button>New Teacher</button>
+      </div>
       <List items={teachers} fields={['index', 'name', 'class', 'contact']} />
     </div>
   );

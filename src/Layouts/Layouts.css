@@ -14,4 +14,35 @@
 .topnavContainer{
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
 }
+.sidebar {
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  .sidebar li {
+    margin-bottom: 4em;
+  }
+  
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+    padding-left: 16px;
+  }
+  
+  .sidebar .link {
+    margin-right: 10px;
+    padding-right: 16px;
+  }
+  

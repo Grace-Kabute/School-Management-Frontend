@@ -15,7 +15,7 @@ const studentsWithAverage = students.map((student) => ({
 
 const Performance = () => {
   return (
-    <div>
+    <div className='wrapper'>
       <h2>Performance</h2>
       <List items={studentsWithAverage} fields={['index', 'name','openerExam','midTerm', 'EndTerm', 'average']} />
     </div>

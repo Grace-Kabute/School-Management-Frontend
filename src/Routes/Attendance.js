@@ -19,7 +19,7 @@ const AttendanceList = () => {
   };
 
   return (
-    <div>
+    <div className='wrapper'>
       <h2>Student Attendance List</h2>
       <List items={students} fields={fields} onAttendanceChange={handleAttendanceChange} />
     </div>
