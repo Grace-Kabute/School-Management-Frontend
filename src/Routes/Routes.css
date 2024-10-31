@@ -56,3 +56,23 @@ button{
     font-size: larger;
     margin: 10px;
   }
+  /* performance table */
+
+  .performance-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .performance-table th,
+  .performance-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .performance-table th {
+    background-color: #f2f2f2;
+  }
+  .performance-table input{
+    border: none;
+  }
